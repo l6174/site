@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors:{
+                        'base': '#24273a',
+                        'mantle': '#1e2030',
+                        'text': '#cad3f5',
+                        'crust': '#181926',
+                        'green': '#a6da95',
+                        'green-hover': '#a6da95e1',
+                        'white': '#cad3f5',
+                    }
+                },
+            }
+        }
+    </script>
+    <title>Acepire Games</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<!--Header-->
+<header class="text-text bg-mantle body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <img class = "w-10 h-10" src="assets/Logo_Transparent.png">
+      <span class="ml-3 text-xl">Acepire Games</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-text justify-center">
+      <a href="index"class="mr-5 text-green hover:text-green-hover">Home</a>
+      <a href="games"class="mr-5 hover:text-green-hover">Games</a>
+      <a href="videos"class="mr-5 hover:text-green-hover">Videos</a>
+      <a href="about"class="mr-5 hover:text-green-hover">About</a>
+    </nav>
+    <button onclick="window.location.href='games';" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-text mt-4 md:mt-0">Download
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+<!--Sections-->
+<section class="text-text bg-base body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">Checkout videos of my games!</h1>
+        <button onclick="window.location.href='videos';" class="flex-shrink-0 text-base bg-green border-0 py-2 px-8 focus:outline-none hover:bg-green-hover rounded text-lg mt-10 sm:mt-0">Videos</button>
+      </div>
+    </div>
+  </section>
+  <section class="text-text bg-base body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">Checkout my playstore developer page.</h1>
+        <button onclick="window.location.href='games';" class="flex-shrink-0 text-base bg-green border-0 py-2 px-8 focus:outline-none hover:bg-green-hover rounded text-lg mt-10 sm:mt-0">Playstore</button>
+      </div>
+    </div>
+  </section>
+  <section class="text-text bg-base body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">About Me! Who am I?</h1>
+        <button onclick="window.location.href='about';" class="flex-shrink-0 text-base bg-green border-0 py-2 px-8 focus:outline-none hover:bg-green-hover rounded text-lg mt-10 sm:mt-0">About</button>
+      </div>
+    </div>
+  </section>
+
+<!--Footer-->
+  <footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+        <img class = "w-10 h-10" src="assets/Logo_Transparent.png">
+        <span class="ml-3 text-xl">Acepire Games</span>
+      </a>
+      <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 Acepire Games —
+        <a href="https://l6174.carrd.co" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@l6174</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <button onclick="window.location.href='mailto:contact@acepiregames.tk';" class="inline-flex items-center bg-base border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-text mt-4 md:mt-0">Contact
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
